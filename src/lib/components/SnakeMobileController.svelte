@@ -26,7 +26,11 @@
         snakeGameStore.onEnter();
         sfxContainer.shortButton?.play();
     }
+
+    
+    const controllerBtnStyle = 'btn variant-filled-secondary rounded p-1 text-4xl'
 </script>
+
 
 
 <div 
@@ -38,46 +42,36 @@
 >
     <button 
         on:click={onUp}
-        class='controller-btn col-start-2'
+        class='{controllerBtnStyle} col-start-2'
     >
         <iconify-icon icon="material-symbols:arrow-drop-up-rounded"></iconify-icon>
     </button>
 
     <button 
         on:click={onDown}
-        class='controller-btn col-start-2 row-start-2'
+        class='{controllerBtnStyle} col-start-2 row-start-2'
     >
         <iconify-icon icon="material-symbols:arrow-drop-down-rounded"></iconify-icon>
     </button>
 
     <button 
         on:click={onLeft}
-        class='controller-btn col-start-1 row-start-2'
+        class='{controllerBtnStyle} col-start-1 row-start-2'
     >
         <iconify-icon icon="material-symbols:arrow-left-rounded"></iconify-icon>
     </button>
 
     <button 
         on:click={onRight}
-        class='controller-btn col-start-3 row-start-2'
+        class='{controllerBtnStyle} col-start-3 row-start-2'
     >
         <iconify-icon icon="material-symbols:arrow-right-rounded"></iconify-icon>
     </button>
 
     <button 
         on:click={onEnter}
-        class='controller-btn px-6 col-start-4 col-span-2 row-span-2' 
+        class='{controllerBtnStyle} px-6 col-start-4 col-span-2 row-span-2' 
     >
         <iconify-icon icon="icon-park-solid:enter-key-one"></iconify-icon>
     </button>
 </div>
-
-
-<style lang='postcss'>
-    .controller-btn {
-        @apply btn variant-filled-secondary;
-        @apply rounded;
-        @apply p-1;
-        @apply text-4xl;
-    }
-</style>
