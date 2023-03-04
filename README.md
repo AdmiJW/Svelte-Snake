@@ -2,6 +2,11 @@
 
 A classical snake game made with the promising web framework Svelte, SvelteKit, TypeScript, TailwindCSS and Skeleton UI, by AdmiJW.
 
+[__👉 PLAY IT HERE__](http://svelte-snake-admijw.vercel.app/)
+
+Use WASD and ENTER to play. On-screen control is also available.
+
+
 ![Screenshot 1](/static/img/screenshot1.png)
 
 ![Screenshot 2](/static/img/screenshot2.png)
